@@ -1,7 +1,0 @@
-{% assign keys = "notice,info,warning,error" | split: ',' %}
-
-{% for key in keys %}
-  {% if flash[key] != blank %}
-    {{ flash[key] }}
-  {% endif %}
-{% endfor %}
