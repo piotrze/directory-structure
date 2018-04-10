@@ -1,0 +1,9 @@
+---
+slug: /
+format: html
+layout_name: 1col
+name: Home
+---
+{%- assign name = 'Home' -%}
+{%- content_for 'pagetitle' -%}{{name}}{%- endcontent_for -%}
+<h1>{{name}}</h1>
